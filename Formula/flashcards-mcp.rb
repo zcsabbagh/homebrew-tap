@@ -8,10 +8,10 @@ class FlashcardsMcp < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", "--production=false"
-    system "npm", "run", "build"
+    # Install production dependencies only (dist/ and package.json are pre-built)
+    system "npm", "install", "--production=true"
 
-    # Install the built artifacts
+    # Install the pre-built artifacts and dependencies
     libexec.install "dist", "node_modules", "package.json", "bin"
     (bin/"flashcards-mcp").write_env_script libexec/"bin/flashcards-mcp.js", PATH: "#{Formula["node"].opt_bin}:$PATH"
   end
