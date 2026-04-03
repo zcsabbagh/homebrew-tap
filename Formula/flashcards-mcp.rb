@@ -1,7 +1,7 @@
 class FlashcardsMcp < Formula
   desc "Spaced repetition flashcard MCP server with FSRS-5 algorithm"
   homepage "https://github.com/zcsabbagh/flashcards-mcp"
-  url "https://github.com/zcsabbagh/flashcards-mcp/releases/download/v1.0.0/flashcards-mcp-1.0.0.tar.gz"
+  url "https://registry.npmjs.org/flashcards-mcp/-/flashcards-mcp-1.0.0.tgz"
   sha256 "6b64816933114c06ed28730c70c56be5c4821643b1ed5bc93ed9c2163a938564"
   license "MIT"
 
